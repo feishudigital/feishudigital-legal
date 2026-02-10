@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — BayScout</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      color: #1f2937;
+      background: #f9fafb;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 12px; }
+    ul {
+      margin: 0 0 12px 24px;
+    }
+    li { margin-bottom: 4px; }
+    strong { font-weight: 600; }
+    code {
+      background: #f3f4f6;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    a { color: #2563eb; }
+    .highlight {
+      background: #eff6ff;
+      border-left: 3px solid #2563eb;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .nav {
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+    .nav a {
+      margin-right: 16px;
+      text-decoration: none;
+    }
+    .nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="privacy.html"><strong>Privacy Policy</strong></a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">BayScout — eBay Seller Tools Chrome Extension — Last updated: February 2026</p>
+
+    <div class="highlight">
+      <strong>Your browsing data stays private.</strong> BayScout reads eBay page data locally in your browser to provide analysis. We only store data you explicitly choose to save (tracked items, alerts, keyword lists).
+    </div>
+
+    <h2>What data we collect</h2>
+    <p>BayScout collects only what is necessary to provide its features:</p>
+    <ul>
+      <li><strong>Account data:</strong> Email address and hashed password when you create an account</li>
+      <li><strong>Saved items:</strong> Items, sellers, and keywords you choose to track</li>
+      <li><strong>Usage count:</strong> Daily API call count for free-tier limits</li>
+      <li><strong>Analysis history:</strong> Search and listing analyses you run (for your dashboard)</li>
+    </ul>
+    <p>We do <strong>not</strong> collect browsing history, eBay credentials, personal financial data, or any data from non-eBay websites.</p>
+
+    <h2>How the extension works</h2>
+    <p>BayScout operates in two modes:</p>
+    <ul>
+      <li><strong>Client-side analysis:</strong> Search stats, listing scores, title analysis, and profit calculations are computed entirely in your browser. No eBay page content is sent to our servers for these features.</li>
+      <li><strong>Backend features:</strong> Keyword research, price tracking, seller monitoring, and alerts require server communication. Only the specific data needed (item IDs, keywords, seller names) is transmitted — never full page content.</li>
+    </ul>
+
+    <h2>Network requests</h2>
+    <p>The extension communicates with:</p>
+    <ul>
+      <li><strong>BayScout API</strong> (our backend) — for authentication, keyword research, price tracking, seller tracking, alerts, and AI listing optimization</li>
+      <li><strong>eBay Autocomplete API</strong> — for keyword suggestions (public API, no personal data sent)</li>
+      <li><strong>Lemon Squeezy API</strong> — for Pro subscription license validation only</li>
+    </ul>
+    <p>We do <strong>not</strong> use any analytics, tracking pixels, or third-party advertising services.</p>
+
+    <h2>Data storage</h2>
+    <p><strong>Locally (your browser):</strong></p>
+    <ul>
+      <li>Authentication tokens (via <code>chrome.storage.local</code>)</li>
+      <li>User preferences and settings</li>
+      <li>Daily usage counter</li>
+    </ul>
+    <p><strong>Server-side (Supabase, hosted in EU/US):</strong></p>
+    <ul>
+      <li>Your account profile and subscription status</li>
+      <li>Tracked items, sellers, and price history</li>
+      <li>Keyword lists and alert configurations</li>
+      <li>Analysis history</li>
+    </ul>
+    <p>All server data is protected by Row Level Security — you can only access your own data. Data is encrypted in transit (TLS) and at rest.</p>
+
+    <h2>AI features</h2>
+    <p>BayScout's AI Listing Tools may use third-party AI providers (OpenAI, Anthropic) to generate optimized listing titles and descriptions. When you use AI features:</p>
+    <ul>
+      <li>Only the listing title, description, and category you provide are sent to the AI provider</li>
+      <li>No personal data or browsing history is included</li>
+      <li>AI-generated content is returned to you and not stored by us beyond your analysis history</li>
+    </ul>
+    <p>If no AI API is configured, a rule-based fallback is used that runs entirely on our server with no third-party data sharing.</p>
+
+    <h2>Permissions explained</h2>
+    <ul>
+      <li><strong>Host permissions (ebay.com/co.uk/de/com.au/fr):</strong> To read listing data and inject analysis overlays on eBay pages only</li>
+      <li><strong>storage:</strong> To save authentication tokens and preferences locally</li>
+      <li><strong>tabs:</strong> To open the BayScout dashboard in a new tab</li>
+    </ul>
+
+    <h2>Data deletion</h2>
+    <p>You can delete your account and all associated data at any time by contacting us at <strong>feishudigital@gmail.com</strong>. Uninstalling the extension removes all local data immediately.</p>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Supabase</strong> (database & authentication) — <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+      <li><strong>Lemon Squeezy</strong> (payments) — <a href="https://www.lemonsqueezy.com/privacy" target="_blank">lemonsqueezy.com/privacy</a></li>
+      <li><strong>OpenAI / Anthropic</strong> (optional AI features) — <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a>, <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>BayScout is not intended for use by children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, the updated version will be posted here and noted in the Chrome Web Store listing. Material changes will be communicated via the extension.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy? Contact us at <strong>feishudigital@gmail.com</strong>.</p>
+
+    <div class="footer">
+      BayScout v1.0.0 — eBay Seller Tools by Feishu Digital
+    </div>
+  </div>
+</body>
+</html>
