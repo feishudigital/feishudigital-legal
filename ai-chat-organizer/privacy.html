@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — AI Chat Organizer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      color: #1f2937;
+      background: #f9fafb;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 12px; }
+    ul {
+      margin: 0 0 12px 24px;
+    }
+    li { margin-bottom: 4px; }
+    strong { font-weight: 600; }
+    code {
+      background: #f3f4f6;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    a { color: #2563eb; }
+    .highlight {
+      background: #eff6ff;
+      border-left: 3px solid #6366f1;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .nav {
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+    .nav a {
+      margin-right: 16px;
+      text-decoration: none;
+    }
+    .nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <a href="privacy.html"><strong>Privacy Policy</strong></a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">AI Chat Organizer — Chrome Extension — Last updated: February 2026</p>
+
+    <div class="highlight">
+      <strong>Your conversations stay in your browser.</strong> AI Chat Organizer does not collect, transmit, or store any of your chat content on external servers. All data is stored locally in your browser using <code>chrome.storage.local</code>.
+    </div>
+
+    <h2>What data we store</h2>
+    <p>All data is stored <strong>locally in your browser</strong> and never sent to our servers:</p>
+    <ul>
+      <li><strong>Folder structure:</strong> Names, colors, and hierarchy of folders you create</li>
+      <li><strong>Tags:</strong> Tag names, colors, and which conversations they are assigned to</li>
+      <li><strong>Conversation metadata:</strong> Conversation IDs and titles (as displayed in the platform sidebar) and their folder/tag assignments</li>
+      <li><strong>Prompts:</strong> Prompt templates you create or save</li>
+      <li><strong>Settings:</strong> Your preferences (theme, sort order, sidebar position)</li>
+    </ul>
+    <p>We do <strong>not</strong> store or read the content of your conversations. The extension only reads conversation titles from the platform sidebar to display them in the organizer.</p>
+
+    <h2>Export feature</h2>
+    <p>When you use the Export feature, the extension reads message content from the currently open conversation page to generate a Markdown or JSON file. This data is:</p>
+    <ul>
+      <li>Processed entirely in your browser</li>
+      <li>Downloaded directly to your device</li>
+      <li>Never sent to any server</li>
+    </ul>
+
+    <h2>Network requests</h2>
+    <p>The extension makes network requests only to:</p>
+    <ul>
+      <li><strong>Lemon Squeezy API</strong> (<code>api.lemonsqueezy.com</code>) — to validate Pro license keys. Only the license key is sent, no personal data or conversation content.</li>
+    </ul>
+    <p>We do <strong>not</strong> use analytics, tracking pixels, telemetry, or any third-party advertising services. There is no server-side backend.</p>
+
+    <h2>Platforms accessed</h2>
+    <p>The extension runs on the following websites to provide its functionality:</p>
+    <ul>
+      <li>chat.openai.com / chatgpt.com (ChatGPT)</li>
+      <li>claude.ai (Claude)</li>
+      <li>gemini.google.com (Gemini)</li>
+    </ul>
+    <p>On these sites, the extension reads the conversation sidebar to detect conversation titles and IDs. It does <strong>not</strong> modify, intercept, or transmit any data to or from these platforms.</p>
+
+    <h2>Permissions explained</h2>
+    <ul>
+      <li><strong>Host permissions (chatgpt.com, claude.ai, gemini.google.com):</strong> To inject the organizer sidebar and read conversation titles from the platform navigation</li>
+      <li><strong>storage:</strong> To save your folders, tags, prompts, and settings locally</li>
+      <li><strong>alarms:</strong> To periodically revalidate Pro license status (once per hour)</li>
+    </ul>
+
+    <h2>Data deletion</h2>
+    <p>Uninstalling the extension removes all locally stored data immediately. You can also clear extension data via Chrome's settings (Extensions &gt; AI Chat Organizer &gt; Details &gt; Clear data).</p>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Lemon Squeezy</strong> (payment processing) — <a href="https://www.lemonsqueezy.com/privacy" target="_blank">lemonsqueezy.com/privacy</a></li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>AI Chat Organizer is not intended for use by children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, the updated version will be posted here. Material changes will be noted in the Chrome Web Store listing.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy? Contact us at <strong>feishudigital@gmail.com</strong>.</p>
+
+    <div class="footer">
+      AI Chat Organizer v1.0.0 — by Feishu Digital
+    </div>
+  </div>
+</body>
+</html>
