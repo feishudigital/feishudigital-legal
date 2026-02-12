@@ -18,32 +18,25 @@
       margin: 0 auto;
       padding: 48px 24px;
     }
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .subtitle {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 32px;
-    }
-    h2 {
-      font-size: 17px;
-      font-weight: 600;
-      margin-top: 28px;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #6b7280; margin-bottom: 32px; }
+    h2 { font-size: 17px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
     p { margin-bottom: 12px; }
-    ul {
-      margin: 0 0 12px 24px;
-    }
+    ul { margin: 0 0 12px 24px; }
     li { margin-bottom: 4px; }
     strong { font-weight: 600; }
     a { color: #2563eb; }
     .highlight {
       background: #eff6ff;
-      border-left: 3px solid #2563eb;
+      border-left: 3px solid #6366f1;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .warning {
+      background: #fef3c7;
+      border-left: 3px solid #f59e0b;
       padding: 12px 16px;
       border-radius: 0 8px 8px 0;
       margin: 16px 0;
@@ -56,14 +49,8 @@
       font-size: 12px;
       color: #9ca3af;
     }
-    .nav {
-      margin-bottom: 24px;
-      font-size: 13px;
-    }
-    .nav a {
-      margin-right: 16px;
-      text-decoration: none;
-    }
+    .nav { margin-bottom: 24px; font-size: 13px; }
+    .nav a { margin-right: 16px; text-decoration: none; }
     .nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -72,75 +59,128 @@
     <div class="nav">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html"><strong>Terms of Service</strong></a>
+      <a href="impressum.html">Impressum</a>
     </div>
 
     <h1>Terms of Service</h1>
-    <p class="subtitle">BayScout — eBay Seller Tools Chrome Extension — Last updated: February 2026</p>
+    <p class="subtitle">BayScout — Chrome Extension &amp; SaaS — Last updated: February 12, 2026</p>
 
     <div class="highlight">
-      By installing or using BayScout, you agree to these terms. If you do not agree, please uninstall the extension.
+      By installing BayScout or creating an account, you agree to these terms. If you do not agree, please uninstall the extension and do not use the service.
     </div>
 
-    <h2>1. Service description</h2>
-    <p>BayScout is a Chrome browser extension that provides eBay sellers with market analysis tools, including search result overlays, listing analysis, keyword research, price tracking, seller monitoring, alerts, and AI-powered listing optimization.</p>
+    <h2>1. Provider</h2>
+    <p>
+      Kevin Lin<br>
+      Grootsruhe 3<br>
+      20537 Hamburg, Germany<br>
+      Email: feishudigital@gmail.com
+    </p>
 
-    <h2>2. Accounts</h2>
-    <p>Some features require a free account. You are responsible for maintaining the security of your account credentials. You must provide a valid email address and must not create multiple accounts to circumvent usage limits.</p>
+    <h2>2. Service description</h2>
+    <p>BayScout is a Chrome browser extension with a cloud backend that provides eBay seller tools including keyword research, price tracking, seller monitoring, listing analysis, profit calculation, and alert notifications. The extension operates on eBay websites and communicates with our backend API for data processing and storage.</p>
+    <p>BayScout is an <strong>independent third-party tool</strong>. We are not affiliated with, endorsed by, or officially connected to eBay Inc. "eBay" is a trademark of eBay Inc.</p>
 
-    <h2>3. Free and Pro plans</h2>
+    <h2>3. Account registration</h2>
+    <p>To use BayScout, you must create an account with a valid email address and password. You are responsible for:</p>
     <ul>
-      <li><strong>Free plan:</strong> Limited to 10 lookups per day. Includes search overlay, listing analyzer, and profit calculator.</li>
-      <li><strong>Pro plan ($14.99/month):</strong> Unlimited lookups. Includes all features: keyword research, price tracker, seller spy, alerts, AI listing tools, CSV export, and full dashboard.</li>
+      <li>Providing accurate registration information</li>
+      <li>Keeping your login credentials confidential</li>
+      <li>All activity that occurs under your account</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate accounts that violate these terms.</p>
+
+    <h2>4. Free and Pro plans</h2>
+    <ul>
+      <li><strong>Free plan:</strong> 10 API lookups per day (keyword research, analysis, tracking operations). Core features included.</li>
+      <li><strong>Pro plan ($14.99/month):</strong> Unlimited lookups, priority support, and all current and future premium features.</li>
     </ul>
     <p>Prices may change with 30 days notice. Existing subscribers keep their current price until the end of their billing cycle.</p>
 
-    <h2>4. Payments and billing</h2>
-    <p>Payments are processed by <strong>Lemon Squeezy</strong>, who acts as our Merchant of Record. Lemon Squeezy handles all billing, taxes, VAT, and refunds. By subscribing to a Pro plan, you also agree to <a href="https://www.lemonsqueezy.com/terms" target="_blank">Lemon Squeezy's Terms of Service</a>.</p>
+    <h2>5. Payments and billing</h2>
+    <p>Payments are processed by <strong>Lemon Squeezy</strong> (Lemon Squeezy, LLC), who acts as Merchant of Record. Lemon Squeezy handles all billing, taxes, VAT, invoicing, and refund processing. By subscribing to a Pro plan, you also agree to <a href="https://www.lemonsqueezy.com/terms" target="_blank">Lemon Squeezy's Terms of Service</a>.</p>
     <ul>
       <li>Subscriptions are billed monthly and renew automatically</li>
-      <li>You can cancel at any time — access continues until the end of the billing period</li>
-      <li>Refunds are handled on a case-by-case basis — contact us within 14 days of purchase</li>
+      <li>You can cancel at any time — access continues until the end of the current billing period</li>
+      <li>Refund requests are handled by Lemon Squeezy — contact us within 14 days of purchase</li>
     </ul>
 
-    <h2>5. Acceptable use</h2>
+    <h2>6. Right of withdrawal (Widerrufsrecht)</h2>
+    <div class="warning">
+      <strong>Widerrufsbelehrung:</strong> As a consumer in the EU, you have the right to withdraw from the purchase within 14 days without giving a reason.
+    </div>
+    <p>The withdrawal period is 14 days from the date of purchase. To exercise your right of withdrawal, contact us at <strong>feishudigital@gmail.com</strong> with a clear statement of your decision to withdraw.</p>
+    <p><strong>Early expiration of the right of withdrawal:</strong> By using Pro features after subscribing, you expressly consent to the immediate provision of the digital service and acknowledge that you thereby lose your right of withdrawal (Art. 16(m) Directive 2011/83/EU, § 356(5) BGB). If you do not use Pro features, the 14-day withdrawal period applies in full.</p>
+    <p>To process a withdrawal/refund, contact us at feishudigital@gmail.com or directly through your Lemon Squeezy account.</p>
+
+    <h2>7. Acceptable use</h2>
     <p>You agree not to:</p>
     <ul>
-      <li>Use BayScout to violate eBay's Terms of Service</li>
-      <li>Attempt to reverse-engineer, modify, or redistribute the extension</li>
-      <li>Use automated tools to interact with BayScout's API beyond normal usage</li>
-      <li>Share your Pro account with others or resell access</li>
+      <li>Attempt to reverse-engineer, decompile, modify, or redistribute the extension or backend</li>
+      <li>Circumvent free-tier usage limits or rate limiting</li>
+      <li>Use automated tools to access the BayScout API outside of the extension</li>
+      <li>Use BayScout in ways that violate eBay's terms of service or applicable law</li>
+      <li>Resell, sublicense, or share account access with third parties</li>
       <li>Use the service for any illegal purpose</li>
     </ul>
 
-    <h2>6. Data accuracy</h2>
-    <p>BayScout provides market analysis based on publicly available eBay data. We do not guarantee the accuracy, completeness, or timeliness of any data, statistics, or AI-generated content. All information is provided for informational purposes only and should not be the sole basis for business decisions.</p>
+    <h2>8. eBay data and compliance</h2>
+    <p>BayScout accesses publicly visible eBay data through official eBay APIs and page content. We comply with eBay's API License Agreement and Developer Program policies. The data displayed in BayScout (prices, listings, seller info) originates from eBay and may not be perfectly accurate or up-to-date. We make no guarantees about the accuracy of eBay marketplace data.</p>
 
-    <h2>7. eBay relationship</h2>
-    <p>BayScout is an independent third-party tool. We are <strong>not affiliated with, endorsed by, or officially connected to eBay Inc.</strong> in any way. "eBay" is a registered trademark of eBay Inc. BayScout reads publicly visible data from eBay pages that you visit in your browser.</p>
+    <h2>9. Alert notifications</h2>
+    <p>BayScout sends email notifications when your configured alerts trigger (e.g., price drops, seller activity). By creating alerts, you consent to receiving these emails at your registered email address. You can disable individual alerts or all email notifications at any time through the dashboard.</p>
 
-    <h2>8. AI-generated content</h2>
-    <p>AI listing suggestions are generated by third-party AI providers and are provided as-is. You are responsible for reviewing and editing any AI-generated content before using it in your eBay listings. We are not liable for any consequences of using AI-generated content.</p>
+    <h2>10. AI features (future)</h2>
+    <p>BayScout may include AI-powered features (listing optimization, keyword suggestions) in the future. When activated, listing data you submit may be processed by third-party AI providers (OpenAI or Anthropic). AI-generated content is provided as suggestions only — you are responsible for reviewing and editing any AI output before using it on eBay.</p>
 
-    <h2>9. Service availability</h2>
-    <p>We strive for high availability but do not guarantee uninterrupted service. We may perform maintenance, updates, or changes to features at any time. We reserve the right to modify or discontinue features with reasonable notice.</p>
+    <h2>11. Data and privacy</h2>
+    <p>Your account data, tracking data, and alert configurations are stored on our servers (Supabase database, Fly.io infrastructure). See our <a href="privacy.html">Privacy Policy</a> for full details on data processing, storage, third-party services, and your rights under GDPR.</p>
 
-    <h2>10. Limitation of liability</h2>
-    <p>BayScout is provided "as is" without warranties of any kind. To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of the service, including but not limited to lost profits, lost sales, or data loss.</p>
+    <h2>12. Service availability</h2>
+    <p>We strive to maintain high availability but cannot guarantee uninterrupted service. BayScout may experience downtime due to:</p>
+    <ul>
+      <li>Server maintenance or updates</li>
+      <li>Changes to eBay's website structure or APIs</li>
+      <li>Third-party service outages (Supabase, eBay, Lemon Squeezy)</li>
+    </ul>
+    <p>We are not liable for temporary unavailability. We will make reasonable efforts to restore service promptly.</p>
 
-    <h2>11. Termination</h2>
-    <p>We may suspend or terminate your account if you violate these terms. You may delete your account at any time by contacting us. Upon termination, your data will be deleted within 30 days.</p>
+    <h2>13. Limitation of liability</h2>
+    <p>BayScout is provided "as is" without warranties of any kind, express or implied. To the maximum extent permitted by applicable law:</p>
+    <ul>
+      <li>We are not liable for any indirect, incidental, special, or consequential damages arising from your use of or inability to use the service</li>
+      <li>We are not liable for decisions you make based on data displayed by BayScout (pricing decisions, inventory choices, etc.)</li>
+      <li>We are not liable for data loss resulting from service disruption, account termination, or third-party service failures</li>
+      <li>Our total liability is limited to the amount you paid for the Pro subscription in the 12 months preceding the claim</li>
+    </ul>
+    <p>These limitations do <strong>not</strong> apply to liability for intentional misconduct or gross negligence, or to any liability that cannot be excluded or limited under applicable law (including mandatory consumer protection rights under EU law).</p>
 
-    <h2>12. Changes to these terms</h2>
-    <p>We may update these terms from time to time. Material changes will be communicated via the extension or email. Continued use after changes constitutes acceptance.</p>
+    <h2>14. Termination</h2>
+    <ul>
+      <li>You may stop using BayScout at any time by uninstalling the extension and cancelling your subscription</li>
+      <li>You can request account deletion by contacting feishudigital@gmail.com</li>
+      <li>We may suspend or terminate accounts that violate these terms, with notice where possible</li>
+      <li>Upon termination, your server-side data will be deleted within 30 days (unless required by law to retain)</li>
+    </ul>
 
-    <h2>13. Governing law</h2>
-    <p>These terms are governed by the laws of Germany. Any disputes shall be resolved in the courts of Germany.</p>
+    <h2>15. Changes to these terms</h2>
+    <p>We may update these terms from time to time. Material changes will be communicated via the Chrome Web Store listing, extension update notes, or email to registered users. Continued use after being notified of changes constitutes acceptance of the updated terms. If you do not agree with changes, you may cancel your subscription and uninstall the extension.</p>
 
-    <h2>14. Contact</h2>
-    <p>Questions about these terms? Contact us at <strong>feishudigital@gmail.com</strong>.</p>
+    <h2>16. Online dispute resolution</h2>
+    <p>The European Commission provides an Online Dispute Resolution (ODR) platform for consumers: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. We are not obligated and not willing to participate in dispute resolution proceedings before a consumer arbitration board, but we are always open to resolving issues directly — contact us at feishudigital@gmail.com.</p>
+
+    <h2>17. Severability</h2>
+    <p>If any provision of these terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these terms will otherwise remain in full force and effect.</p>
+
+    <h2>18. Governing law and jurisdiction</h2>
+    <p>These terms are governed by the laws of the Federal Republic of Germany. If you are a consumer residing in the EU, you additionally benefit from any mandatory provisions of the consumer protection laws of your country of residence. Place of jurisdiction for all disputes is Hamburg, Germany, unless mandatory consumer protection laws provide for a different jurisdiction.</p>
+
+    <h2>19. Contact</h2>
+    <p>Questions about these terms? Contact us at:<br>
+    <strong>feishudigital@gmail.com</strong></p>
 
     <div class="footer">
-      BayScout v1.0.0 — eBay Seller Tools by Feishu Digital
+      BayScout v1.0.0 — by Kevin Lin / Feishu Digital
     </div>
   </div>
 </body>

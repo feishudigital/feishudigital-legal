@@ -18,34 +18,14 @@
       margin: 0 auto;
       padding: 48px 24px;
     }
-    h1 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .subtitle {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 32px;
-    }
-    h2 {
-      font-size: 17px;
-      font-weight: 600;
-      margin-top: 28px;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #6b7280; margin-bottom: 32px; }
+    h2 { font-size: 17px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
     p { margin-bottom: 12px; }
-    ul {
-      margin: 0 0 12px 24px;
-    }
+    ul { margin: 0 0 12px 24px; }
     li { margin-bottom: 4px; }
     strong { font-weight: 600; }
-    code {
-      background: #f3f4f6;
-      padding: 1px 5px;
-      border-radius: 4px;
-      font-size: 13px;
-    }
+    code { background: #f3f4f6; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
     a { color: #2563eb; }
     .highlight {
       background: #eff6ff;
@@ -62,14 +42,8 @@
       font-size: 12px;
       color: #9ca3af;
     }
-    .nav {
-      margin-bottom: 24px;
-      font-size: 13px;
-    }
-    .nav a {
-      margin-right: 16px;
-      text-decoration: none;
-    }
+    .nav { margin-bottom: 24px; font-size: 13px; }
+    .nav a { margin-right: 16px; text-decoration: none; }
     .nav a:hover { text-decoration: underline; }
   </style>
 </head>
@@ -78,27 +52,38 @@
     <div class="nav">
       <a href="privacy.html"><strong>Privacy Policy</strong></a>
       <a href="terms.html">Terms of Service</a>
+      <a href="impressum.html">Impressum</a>
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">AI Chat Organizer — Chrome Extension — Last updated: February 2026</p>
+    <p class="subtitle">AI Chat Organizer — Chrome Extension — Last updated: February 12, 2026</p>
 
     <div class="highlight">
-      <strong>Your conversations stay in your browser.</strong> AI Chat Organizer does not collect, transmit, or store any of your chat content on external servers. All data is stored locally in your browser using <code>chrome.storage.local</code>.
+      <strong>Your conversations stay in your browser.</strong> AI Chat Organizer does not collect, transmit, or store any of your chat content on external servers. All organizational data is stored locally in your browser using <code>chrome.storage.local</code>.
     </div>
 
-    <h2>What data we store</h2>
-    <p>All data is stored <strong>locally in your browser</strong> and never sent to our servers:</p>
+    <h2>1. Data controller</h2>
+    <p>The person responsible for data processing in connection with this extension is:</p>
+    <p>
+      Kevin Lin<br>
+      Grootsruhe 3<br>
+      20537 Hamburg, Germany<br>
+      Email: <strong>feishudigital@gmail.com</strong>
+    </p>
+
+    <h2>2. What data we process</h2>
+    <p>All organizational data is stored <strong>locally in your browser</strong> (<code>chrome.storage.local</code>) and never transmitted to our servers:</p>
     <ul>
       <li><strong>Folder structure:</strong> Names, colors, and hierarchy of folders you create</li>
-      <li><strong>Tags:</strong> Tag names, colors, and which conversations they are assigned to</li>
+      <li><strong>Tags:</strong> Tag names, colors, and conversation assignments</li>
       <li><strong>Conversation metadata:</strong> Conversation IDs and titles (as displayed in the platform sidebar) and their folder/tag assignments</li>
       <li><strong>Prompts:</strong> Prompt templates you create or save</li>
       <li><strong>Settings:</strong> Your preferences (theme, sort order, sidebar position)</li>
+      <li><strong>License key:</strong> Your Pro license key (if purchased), stored locally for validation</li>
     </ul>
-    <p>We do <strong>not</strong> store or read the content of your conversations. The extension only reads conversation titles from the platform sidebar to display them in the organizer.</p>
+    <p>We do <strong>not</strong> store or read the content of your AI conversations. The extension only reads conversation titles from the platform sidebar.</p>
 
-    <h2>Export feature</h2>
+    <h2>3. Export feature</h2>
     <p>When you use the Export feature, the extension reads message content from the currently open conversation page to generate a Markdown or JSON file. This data is:</p>
     <ul>
       <li>Processed entirely in your browser</li>
@@ -106,48 +91,82 @@
       <li>Never sent to any server</li>
     </ul>
 
-    <h2>Network requests</h2>
+    <h2>4. Network requests and third-party data processing</h2>
     <p>The extension makes network requests only to:</p>
     <ul>
-      <li><strong>Lemon Squeezy API</strong> (<code>api.lemonsqueezy.com</code>) — to validate Pro license keys. Only the license key is sent, no personal data or conversation content.</li>
+      <li><strong>Lemon Squeezy API</strong> (<code>api.lemonsqueezy.com</code>) — to validate and activate Pro license keys. Only the license key string is transmitted. No personal data, conversation content, or usage data is sent.</li>
     </ul>
-    <p>We do <strong>not</strong> use analytics, tracking pixels, telemetry, or any third-party advertising services. There is no server-side backend.</p>
+    <p>Lemon Squeezy (Lemon Squeezy, LLC) processes payment data when you purchase a Pro subscription. This includes your name, email, and payment information. Lemon Squeezy acts as Merchant of Record and is an independent data controller for payment data. See: <a href="https://www.lemonsqueezy.com/privacy" target="_blank">Lemon Squeezy Privacy Policy</a>.</p>
+    <p>We do <strong>not</strong> use analytics, tracking pixels, telemetry, cookies, or any third-party advertising services. There is no server-side backend.</p>
 
-    <h2>Platforms accessed</h2>
-    <p>The extension runs on the following websites to provide its functionality:</p>
+    <h2>5. Data transfer to third countries</h2>
+    <p>License key validation requests are sent to Lemon Squeezy's servers, which may be located in the United States. This transfer is necessary for the performance of the license agreement (Art. 49(1)(b) GDPR). No personal data beyond the license key string is transmitted by the extension.</p>
+
+    <h2>6. Legal basis for processing (Art. 6 GDPR)</h2>
+    <ul>
+      <li><strong>Local data storage</strong> (folders, tags, settings): Art. 6(1)(b) GDPR — necessary for the performance of the service you requested by installing the extension.</li>
+      <li><strong>License key validation</strong>: Art. 6(1)(b) GDPR — necessary for the performance of the Pro subscription contract.</li>
+      <li><strong>Payment processing by Lemon Squeezy</strong>: Art. 6(1)(b) GDPR — necessary for the purchase transaction. Lemon Squeezy processes this data as an independent controller.</li>
+    </ul>
+
+    <h2>7. Data retention</h2>
+    <ul>
+      <li><strong>Local browser data:</strong> Retained until you uninstall the extension or clear extension data. No time limit — you control deletion.</li>
+      <li><strong>Payment data at Lemon Squeezy:</strong> Retained according to Lemon Squeezy's own retention policy and applicable tax/accounting laws.</li>
+    </ul>
+
+    <h2>8. Platforms accessed</h2>
+    <p>The extension runs as a content script on:</p>
     <ul>
       <li>chat.openai.com / chatgpt.com (ChatGPT)</li>
       <li>claude.ai (Claude)</li>
       <li>gemini.google.com (Gemini)</li>
     </ul>
-    <p>On these sites, the extension reads the conversation sidebar to detect conversation titles and IDs. It does <strong>not</strong> modify, intercept, or transmit any data to or from these platforms.</p>
+    <p>On these sites, the extension reads the conversation sidebar to detect conversation titles and IDs. It injects a sidebar UI into the page. It does <strong>not</strong> intercept, modify, or transmit any data to or from these platforms. No data from these platforms is sent to us or any third party.</p>
 
-    <h2>Permissions explained</h2>
+    <h2>9. Permissions explained</h2>
     <ul>
       <li><strong>Host permissions (chatgpt.com, claude.ai, gemini.google.com):</strong> To inject the organizer sidebar and read conversation titles from the platform navigation</li>
       <li><strong>storage:</strong> To save your folders, tags, prompts, and settings locally</li>
       <li><strong>alarms:</strong> To periodically revalidate Pro license status (once per hour)</li>
     </ul>
 
-    <h2>Data deletion</h2>
-    <p>Uninstalling the extension removes all locally stored data immediately. You can also clear extension data via Chrome's settings (Extensions &gt; AI Chat Organizer &gt; Details &gt; Clear data).</p>
-
-    <h2>Third-party services</h2>
+    <h2>10. Your rights under GDPR</h2>
+    <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
     <ul>
-      <li><strong>Lemon Squeezy</strong> (payment processing) — <a href="https://www.lemonsqueezy.com/privacy" target="_blank">lemonsqueezy.com/privacy</a></li>
+      <li><strong>Right of access</strong> (Art. 15) — You can request information about what data we process. Since all data is stored locally in your browser, you already have full access.</li>
+      <li><strong>Right to rectification</strong> (Art. 16) — You can edit your data directly in the extension (rename folders, edit tags, etc.).</li>
+      <li><strong>Right to erasure</strong> (Art. 17) — Uninstall the extension or clear its data to delete everything. For payment data, contact Lemon Squeezy.</li>
+      <li><strong>Right to restriction of processing</strong> (Art. 18) — You can disable the extension at any time via Chrome's extension settings.</li>
+      <li><strong>Right to data portability</strong> (Art. 20) — Use the Export feature to download your data in Markdown or JSON format.</li>
+      <li><strong>Right to object</strong> (Art. 21) — You can uninstall the extension at any time to stop all processing.</li>
     </ul>
+    <p>To exercise any of these rights, contact us at <strong>feishudigital@gmail.com</strong>.</p>
 
-    <h2>Children's privacy</h2>
-    <p>AI Chat Organizer is not intended for use by children under 13. We do not knowingly collect data from children.</p>
+    <h2>11. Right to lodge a complaint</h2>
+    <p>You have the right to lodge a complaint with a data protection supervisory authority. The competent authority for us is:</p>
+    <p>
+      Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit<br>
+      Ludwig-Erhard-Str. 22, 7. OG<br>
+      20459 Hamburg<br>
+      <a href="https://datenschutz-hamburg.de" target="_blank">datenschutz-hamburg.de</a>
+    </p>
 
-    <h2>Changes to this policy</h2>
-    <p>If we change this policy, the updated version will be posted here. Material changes will be noted in the Chrome Web Store listing.</p>
+    <h2>12. Data deletion</h2>
+    <p>Uninstalling the extension removes all locally stored data immediately. You can also clear extension data via Chrome settings (Extensions &gt; AI Chat Organizer &gt; Details &gt; Clear data).</p>
 
-    <h2>Contact</h2>
-    <p>Questions about this privacy policy? Contact us at <strong>feishudigital@gmail.com</strong>.</p>
+    <h2>13. Children's privacy</h2>
+    <p>AI Chat Organizer is not intended for use by children under 16 (the GDPR age of consent in Germany). We do not knowingly collect data from children.</p>
+
+    <h2>14. Changes to this policy</h2>
+    <p>If we make material changes to this policy, the updated version will be posted here with a new "Last updated" date. Material changes will also be noted in the Chrome Web Store listing.</p>
+
+    <h2>15. Contact</h2>
+    <p>Questions about this privacy policy? Contact us at:<br>
+    <strong>feishudigital@gmail.com</strong></p>
 
     <div class="footer">
-      AI Chat Organizer v1.0.0 — by Feishu Digital
+      AI Chat Organizer v1.0.0 — by Kevin Lin / Feishu Digital
     </div>
   </div>
 </body>
