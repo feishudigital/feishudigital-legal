@@ -56,7 +56,7 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Readability Scorer — Chrome Extension — Last updated: February 12, 2026</p>
+    <p class="subtitle">Readability Scorer — Chrome Extension — Last updated: February 13, 2026</p>
 
     <div class="highlight">
       <strong>Your text never leaves your browser.</strong> Readability Scorer processes all readability analysis 100% client-side using mathematical formulas. We collect zero data. No text content is ever transmitted to any server.
@@ -74,11 +74,12 @@
     <h2>2. What data we process</h2>
     <p>All data is stored <strong>locally in your browser</strong> (<code>chrome.storage.local</code>) and never transmitted to our servers:</p>
     <ul>
-      <li><strong>Preferences:</strong> Theme, panel border, panel opacity, target score, auto-analyze toggle, badge visibility</li>
+      <li><strong>Preferences:</strong> Theme, panel border, panel opacity, target score, auto-analyze toggle, badge visibility, inline highlight toggle</li>
       <li><strong>Usage tracking:</strong> Daily analysis count and last reset date (for free tier limit of 5 analyses per day)</li>
+      <li><strong>Writing goals:</strong> Daily word goal, writing streak days, streak last date, today's word count, lifetime words analyzed (all stored locally)</li>
       <li><strong>License data:</strong> Pro license key, license instance ID, and last validation timestamp (if purchased)</li>
     </ul>
-    <p>We do <strong>not</strong> store, read, or transmit the text you type or analyze. All readability formulas (Flesch-Kincaid, Gunning Fog, Coleman-Liau, SMOG, ARI, Dale-Chall) are pure mathematics computed entirely on your device. Text is processed in memory and immediately discarded.</p>
+    <p>We do <strong>not</strong> store, read, or transmit the text you type or analyze. All readability formulas (Flesch-Kincaid, Gunning Fog, Coleman-Liau, SMOG, ARI, Dale-Chall) and writing issue detection (passive voice, adverbs, complex words, clich&eacute;s, hedge words, sentence repetition) are pure mathematics and heuristic algorithms computed entirely on your device. Text is processed in memory and immediately discarded.</p>
 
     <h2>3. How the extension works</h2>
     <p>The extension runs as a content script on all websites to detect text fields (textarea, contenteditable elements). When you type or focus a text field, the extension:</p>
@@ -157,7 +158,7 @@
     <strong>feishudigital@gmail.com</strong></p>
 
     <div class="footer">
-      Readability Scorer v1.0.0 — by Kevin Lin / Feishu Digital
+      Readability Scorer v2.0.0 — by Kevin Lin / Feishu Digital
     </div>
   </div>
 </body>
